@@ -1,0 +1,50 @@
+.todo {
+  display: flex;
+  gap: 12px;
+  padding: 0.5rem;
+  font-size: var(--font-size-sm);
+  padding: 16px;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: var(--radii-md);
+}
+
+.todo div:first-child {
+  margin-top: 2px;
+}
+
+.todo p {
+  flex: 1;
+  transition: color 0.2s ease-in-out;
+}
+
+.todo p[data-completed='true'] {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.deleteButton {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  color: var(--red-500);
+  transition: color 0.2s ease-in-out;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radii-sm);
+  color: var(--gray-300);
+}
+
+.deleteButton:hover,
+.deleteButton:active {
+  color: var(--danger);
+  background-color: var(--gray-400);
+}
+
+.deleteButton:focus-visible {
+  outline: 2px solid var(--danger);
+}
