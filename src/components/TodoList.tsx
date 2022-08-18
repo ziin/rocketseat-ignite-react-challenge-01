@@ -36,7 +36,7 @@ function TodosList({
 
       {isEmpty ? (
         <div className={styles.todosListEmpty}>
-          <img src="src/assets/clipboard.png" />
+          <img src="clipboard.png" />
           <p>
             <strong>Você ainda não tem tarefas cadastradas</strong>
             <br />
