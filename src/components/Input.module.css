@@ -11,7 +11,7 @@
 .input:active,
 .input:focus {
   border: 1px solid var(--purple-dark);
-  /* outline: none; */
+  outline: none;
 }
 
 .input::placeholder {
